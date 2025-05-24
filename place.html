@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/GhanaLandscape.webp">
   <link rel="stylesheet" href="styles/place.css" />
 </head>
 <body>
@@ -25,7 +26,7 @@
   </header>
 
   <main>
-    <!--<img src="images/GhanaLandscape.webp" alt="Scenic view of Ghana" width="100%" />-->
+    
     <img src="images/GhanaLandscape.webp"
      srcset="images/GhanaLandscape-small.webp 500w,
              images/GhanaLandscape-medium.webp 1000w,
@@ -33,6 +34,7 @@
      sizes="(max-width: 600px) 500px,
             (max-width: 1000px) 1000px,
             1600px"
+     width="1600" height="900"  
      alt="Scenic landscape of Ghana">
 
     <section class="data-box shadow">
@@ -50,7 +52,9 @@
     </section>
 
     <section class="weather-box shadow">
-      <h2 class="section-title">Weather <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather icon" /></h2>
+      <h2 class="section-title">Weather <img src="images/cloudy.svg" alt="weather icon" width="10" height="10"/></h2>
+
+
       <ul>
         <li><strong>Temperature:</strong> <span id="temp">--</span>°C</li>
         <li><strong>Conditions:</strong> Partly Cloudy</li>
