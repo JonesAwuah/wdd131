@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghana</title>
+  <meta name="description" content="This is the homepage of Ghana for WDD 131 – Dynamic Web Fundamentals. Explore Ghana, learning reflections, and insights into web development and personal interests." />
+  <meta name="author" content="Jones Makafui Awuah" />
+  <title>Explore Ghana - Jones Makafui Awuah</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -23,7 +25,15 @@
   </header>
 
   <main>
-    <img src="images/GhanaLandscape.webp" alt="Scenic view of Ghana" width="100%" />
+    <!--<img src="images/GhanaLandscape.webp" alt="Scenic view of Ghana" width="100%" />-->
+    <img src="images/GhanaLandscape.webp"
+     srcset="images/GhanaLandscape-small.webp 500w,
+             images/GhanaLandscape-medium.webp 1000w,
+             images/GhanaLandscape.webp 1600w"
+     sizes="(max-width: 600px) 500px,
+            (max-width: 1000px) 1000px,
+            1600px"
+     alt="Scenic landscape of Ghana">
 
     <section class="data-box shadow">
       <h2 class="section-title">Data</h2>
@@ -55,6 +65,6 @@
     <p>Last Modification: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/place.js"></script>
+  <script src="scripts/place.js" defer></script>
 </body>
 </html>
