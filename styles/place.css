@@ -20,6 +20,15 @@ header {
   padding: 1rem;
 }
 
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color, #d4af37); /* or any accent color */
+  margin-top: 8px;
+  border-radius: 2px;
+}
 
  nav ul {
   list-style: none;
