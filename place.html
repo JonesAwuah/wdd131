@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/place.css" />
+</head>
+<body>
+  <header>
+    <h1>Exlpore – Ghana – Jones Makafui Awuah</h1>
+
+    <nav>
+      <ul>
+        <li><a href="place.html">Home</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="weather.html">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/GhanaLandscape.webp" alt="Scenic view of Ghana" width="100%" />
+
+    <section class="data-box shadow">
+      <h2 class="section-title">Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 238,535 sq km</li>
+        <li><strong>Population:</strong> 32,000,000+</li>
+        <li><strong>Capital:</strong> Accra</li>
+        <li><strong>Languages:</strong> English</li>
+        <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
+        <li><strong>Time Zone:</strong> UTC</li>
+        <li><strong>Calling Code:</strong> +233</li>
+        <li><strong>Internet TLD:</strong> .gh</li>
+      </ul>
+    </section>
+
+    <section class="weather-box shadow">
+      <h2 class="section-title">Weather <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather icon" /></h2>
+      <ul>
+        <li><strong>Temperature:</strong> <span id="temp">--</span>°C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Wind:</strong> <span id="wind-speed">--</span> km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="wind-chill">--</span>°C</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2025 🌍 Jones Makafui Awuah | Ghana</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/place.js"></script>
+</body>
+</html>

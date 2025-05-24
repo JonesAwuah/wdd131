@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #ce1126; /* Red */
+  --secondary-color: #006b3f; /* Green */
+  --accent-color: #fcd116; /* Yellow */
+  --text-color: #222;
+  --box-bg: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  padding: 1rem;
+}
+
+
+ nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #000000cc;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+main {
+  position: relative;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--box-bg);
+  padding: 1rem;
+  max-width: 300px;
+  position: absolute;
+}
+
+.data-box {
+  top: 2rem;
+  left: 2rem;
+}
+
+.weather-box {
+  bottom: 2rem;
+  right: 4rem;
+}
+
+.section-title {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  margin: 0;
+  width: calc(100% + 2rem); /* Extend beyond the box width */
+  margin-left: -1rem; /* Move to left */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title img {
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+
+main.content-box {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #fcd116; /* Gold stripe */
+  border-left: 5px solid #006b3f; /* Green stripe */
+  border-radius: 8px;
+}
+
+main.content-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+main.content-box li {
+  padding: 0.3rem 0;
+}

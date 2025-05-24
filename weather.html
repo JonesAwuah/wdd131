@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghana Weather</title>
+  <link rel="stylesheet" href="styles/place.css" />
+</head>
+<body>
+  <header>
+    <h1>Ghana - Weather</h1>
+
+    <nav>
+      <ul>
+        <li><a href="place.html">Home</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <main class="content-box">
+    <section class="climate">
+      <h2>Climate Overview</h2>
+      <p>
+        Ghana has a tropical climate, characterized by a dry season and a rainy season. The coastal belt is warm and humid, the forest zone is hot and rainy, and the northern savanna is hot and dry.
+      </p>
+    </section>
+
+    <section class="conditions">
+      <h2>Current Conditions (Accra)</h2>
+      <ul>
+        <li><strong>Temperature:</strong> 30°C</li>
+        <li><strong>Feels Like:</strong> 32°C</li>
+        <li><strong>Humidity:</strong> 80%</li>
+        <li><strong>Wind:</strong> 15 km/h SW</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Visibility:</strong> 10 km</li>
+        <li><strong>UV Index:</strong> 7 (High)</li>
+        <li><strong>Sunrise:</strong> 5:58 AM</li>
+        <li><strong>Sunset:</strong> 6:14 PM</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy;2025  🌍 Jones Makafui Awuah | Ghana<br>
+    Last Modification: <span id="lastModified"></span>
+  </footer>
+
+  <script>
+    // Static example: Wind chill calc 
+    const temp = 28;
+    const wind = 10;
+    let chill = "N/A";
+    if (temp <= 10 && wind > 4.8) {
+      chill = (
+        13.12 +
+        0.6215 * temp -
+        11.37 * Math.pow(wind, 0.16) +
+        0.3965 * temp * Math.pow(wind, 0.16)
+      ).toFixed(1) + " °C";
+    } else {
+      chill = temp + " °C";
+    }
+    document.getElementById("chill").textContent = chill;
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+</html>
