@@ -11,7 +11,7 @@ const temples = [
     location: "Cardston, Alberta, Canada",
     dedicated: "1923, August, 26",
     area: 88000,
-    imageUrl: "images/Canada.jpg"
+    imageUrl: "images/Canada.webp"
   },
   {
     templeName: "Rome Italy Temple",
@@ -25,42 +25,42 @@ const temples = [
     location: "Madrid, Spain",
     dedicated: "1999, March, 19",
     area: 45000,
-    imageUrl: "images/Spain.jpeg"
+    imageUrl: "images/Spain.webp"
   },
   {
     templeName: "Accra Ghana Temple",
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
     area: 17500,
-    imageUrl: "images/Accra.jpg"
+    imageUrl: "images/Accra.webp"
   },
   {
     templeName: "Laie Hawaii Temple",
     location: "Laie, Hawaii, USA",
     dedicated: "1919, November, 27",
     area: 42000,
-    imageUrl: "images/Hawaii.jpg"
+    imageUrl: "images/Hawaii.webp"
   },
   {
     templeName: "Tokyo Japan Temple",
     location: "Tokyo, Japan",
     dedicated: "1980, October, 27",
     area: 52000,
-    imageUrl: "images/Japan.jpg"
+    imageUrl: "images/Japan.webp"
   },
   {
     templeName: "Paris France Temple",
     location: "Paris, France",
     dedicated: "2017, May, 21",
     area: 9200,
-    imageUrl: "images/France.jpg"
+    imageUrl: "images/France.webp"
   },
   {
     templeName: "Londrina Brazil Temple",
     location: "Londrina, Brazil",
     dedicated: "2000, December, 17",
     area: 10500,
-    imageUrl: "images/Brazil.jpg"
+    imageUrl: "images/Brazil.webp"
   },
   {
     templeName: "Guadalajara Mexico Temple",
@@ -74,72 +74,70 @@ const temples = [
     location: "Adelaide, Australia",
     dedicated: "2000, June, 15",
     area: 10700,
-    imageUrl: "images/Australia.jpg"
+    imageUrl: "images/Australia.webp"
   },
   {
     templeName: "London England Temple",
     location: "London, England, UK",
     dedicated: "1958, September, 7",
     area: 42000,
-    imageUrl: "images/England.jpg"
+    imageUrl: "images/England.webp"
   },
   {
     templeName: "Kinshasa DRC Temple",
     location: "Kinshasa, DRC",
     dedicated: "2019, April, 14",
     area: 9600,
-    imageUrl: "images/Congo.jpg"
+    imageUrl: "images/Congo.webp"
   },
   {
     templeName: "Colonia Juárez Mexico Temple",
     location: "Colonia Juárez, Mexico",
     dedicated: "1999, March, 6",
     area: 6800,
-    imageUrl: "images/Mexico_Colonia.jpg"
+    imageUrl: "images/Mexico_Colonia.webp"
   },
   {
     templeName: "Kirtland Temple",
     location: "Kirtland, Ohio, USA",
     dedicated: "1836, March, 27",
     area: 24000, 
-    imageUrl: "images/Kirtland.jpg",
-    note: "Now owned by the Community of Christ"
+    imageUrl: "images/Kirtland.webp",
   },
   {
     templeName: "Nauvoo Temple (original)",
     location: "Nauvoo, Illinois, USA",
     dedicated: "1846, May, 1",
     area: 54000, 
-    imageUrl: "images/Nauvoo.jpg",
-    note: "Destroyed by arson and tornado; rebuilt in 2002"
+    imageUrl: "images/Nauvoo.webp",
   },
   {
     templeName: "St. George Utah Temple",
     location: "St. George, Utah, USA",
     dedicated: "1877, April, 6",
     area: 110000,
-    imageUrl: "images/St_George_Utah.jpg"
+    imageUrl: "images/St_George.webp"
   },
   {
     templeName: "Logan Utah Temple",
     location: "Logan, Utah, USA",
     dedicated: "1884, May, 17",
     area: 119619,
-    imageUrl: "images/Logan.jpg"
+    imageUrl: "images/Logan.webp"
   },
   {
     templeName: "Manti Utah Temple",
     location: "Manti, Utah, USA",
     dedicated: "1888, May, 21",
     area: 100373,
-    imageUrl: "images/Manti.jpg"
+    imageUrl: "images/Manti.webp"
   },
   {
     templeName: "Salt Lake Temple",
     location: "Salt Lake City, Utah, USA",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "images/Salt_Lake.jpg"
+    imageUrl: "images/Salt_Lake.webp"
   }
 ];
 
