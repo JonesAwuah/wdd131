@@ -25,12 +25,12 @@ h1::after {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: var(--accent-color, #d4af37); /* or any accent color */
+  background-color: var(--accent-color);
   margin-top: 8px;
   border-radius: 2px;
 }
 
- nav ul {
+nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -45,28 +45,6 @@ nav a {
   font-weight: bold;
 }
 
-/* For Data and Weather Page */
-main.content-box {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #fff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-top: 8px solid #fcd116; /* Gold stripe */
-  border-left: 5px solid #006b3f; /* Green stripe */
-  border-radius: 8px;
-}
-
-main.content-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-main.content-box li {
-  padding: 0.3rem 0;
-}
-
-/* For Home Page */
 main {
   position: relative;
 }
@@ -101,8 +79,8 @@ main img {
   padding: 0.75rem 1rem;
   font-size: 1.25rem;
   margin: 0;
-  width: calc(100% + 2rem); /* Extend beyond the box width */
-  margin-left: -1rem; /* Move to left */
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   display: flex;
@@ -112,8 +90,6 @@ main img {
 
 .section-title img {
   height: 1.5rem;
-  vertical-align: middle;
-  margin-left: 0.5rem;
 }
 
 ul {
@@ -133,13 +109,14 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+  .shadow {
+    position: static;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
   main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    padding: 1rem;
   }
 }
-
-
-

@@ -1,22 +1,20 @@
+// Update last modified date
 document.getElementById('lastModified').textContent = document.lastModified;
 
-const temp = 28; // Simulated temperature in Celsius
-const windSpeed = 10; // Simulated wind speed in km/h
+// Simulated weather values
+const temp = 8; // Celsius
+const windSpeed = 10; // km/h
 
+// Display in DOM
 document.getElementById('temp').textContent = temp;
 document.getElementById('wind-speed').textContent = windSpeed;
 
+// Wind chill function using one line of code
 function calculateWindChill(t, s) {
-  if (t <= 10 && s > 4.8) {
-    return (
-      13.12 +
-      0.6215 * t -
-      11.37 * Math.pow(s, 0.16) +
-      0.3965 * t * Math.pow(s, 0.16)
-    ).toFixed(1);
-  } else {
-    return 'N/A';
-  }
+  return (13.12 + 0.6215 * t - 11.37 * Math.pow(s, 0.16) + 0.3965 * t * Math.pow(s, 0.16)).toFixed(1);
 }
 
-document.getElementById('wind-chill').textContent = calculateWindChill(temp, windSpeed);
+// Apply wind chill conditionally
+const windChill = (temp <= 10 && windSpeed > 4.8) ? `${calculateWindChill(temp, windSpeed)} °C` : "N/A";
+document.getElementById('wind-chill').textContent = windChill;
+
