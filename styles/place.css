@@ -1,7 +1,7 @@
 :root {
   --primary-color: #ce1126; /* Red */
   --secondary-color: #006b3f; /* Green */
-  --accent-color: #fcd116; /* Yellow */
+  --accent-color: #fcd116;   /* Yellow */
   --text-color: #222;
   --box-bg: rgba(255, 255, 255, 0.9);
 }
@@ -36,7 +36,8 @@ nav ul {
   justify-content: center;
   background-color: #000000cc;
   gap: 1rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0;
+  margin: 0;
 }
 
 nav a {
@@ -90,6 +91,7 @@ main img {
 
 .section-title img {
   height: 1.5rem;
+  vertical-align: middle;
 }
 
 ul {
@@ -109,14 +111,16 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
   .shadow {
     position: static;
     max-width: 100%;
-    margin: 1rem auto;
+    margin: 1rem;
   }
 
-  main {
-    padding: 1rem;
+  main img {
+    width: 100%;
+    height: auto;
   }
 }
