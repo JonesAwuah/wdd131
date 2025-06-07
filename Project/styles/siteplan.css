@@ -1,0 +1,58 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1e3a8a;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header .tagline {
+  font-style: italic;
+  color: #facc15;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Images for wireframes */
+.wireframe img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #facc15;
+  border-radius: 8px;
+}
+
