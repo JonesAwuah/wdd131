@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review Form | AJ Reviews</title>
-  <meta name="description" content="Responsive product review form with dynamic product options, star ratings, installation date, useful features, and a localStorage-based review counter.">
-  <meta name="author" content="Jones Makafui Awuah">
-
-
-  <link rel="stylesheet" href="styles/review.css">
-  <script src="scripts/review.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/review.css" />
 </head>
 <body>
   <header>
     <h1>Product Review Form</h1>
   </header>
-  <form method="get" action="review.html">
-    <h1>Product Review</h1>
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name -->
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
 
-    <!-- Product Name -->
-    <label for="productName">Product Name</label>
-    <select id="productName" name="productName" required>
-      <option value="" disabled selected>Select a Product ...</option>
-    </select>
+      <!-- Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" value="1" required>☆</label>
+        <label><input type="radio" name="rating" value="2">☆☆</label>
+        <label><input type="radio" name="rating" value="3">☆☆☆</label>
+        <label><input type="radio" name="rating" value="4">☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5">☆☆☆☆☆</label>
+      </fieldset>
 
-    <!-- Rating -->
-    <fieldset>
-      <legend>Overall Rating</legend>
-      <label><input type="radio" name="rating" value="1" required />★</label>
-      <label><input type="radio" name="rating" value="2" />★★</label>
-      <label><input type="radio" name="rating" value="3" />★★★</label>
-      <label><input type="radio" name="rating" value="4" />★★★★</label>
-      <label><input type="radio" name="rating" value="5" />★★★★★</label>
-    </fieldset>
+      <!-- Installation Date -->
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required />
 
-    <!-- Date of Installation -->
-    <label for="installDate">Date of Installation</label>
-    <input type="date" id="installDate" name="installDate" required />
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features (check all that apply)</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Easy Setup"> Easy Setup</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Design"> Design</label>
+      </fieldset>
 
-    <!-- Useful Features -->
-    <fieldset>
-      <legend>Which features did you find useful?</legend>
-      <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
-      <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
-      <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
-      <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
-    </fieldset>
+      <!-- Written Review -->
+      <label for="review">Write a Review</label>
+      <textarea id="review" name="review" rows="5" placeholder="Your review..."></textarea>
 
-    <!-- Written Review -->
-    <label for="review">Written Review (Optional)</label>
-    <textarea id="review" name="review"></textarea>
+      <!-- Username -->
+      <label for="username">Your Name (Optional)</label>
+      <input type="text" id="username" name="username" />
 
-    <!-- User Name -->
-    <label for="username">Your Name (Optional)</label>
-    <input type="text" id="username" name="username" />
-
-    <input type="submit" value="Post Review" />
-  </form>
-
+      <!-- Submit -->
+      <input type="submit" value="Submit Review" />
+    </form>
+  </main>
   <footer>
-    <p>&copy;2025  🌍 Jones Makafui Awuah | Ghana</p>
-    <p>Last Modification: 07/06/2025 13:56:10</p>
+    <p>&copy; 2025 | Product Reviews | WDD 131</p>
   </footer>
+  <script src="scripts/review.js"></script>
 </body>
 </html>
