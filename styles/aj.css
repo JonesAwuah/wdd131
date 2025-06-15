@@ -53,7 +53,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.nav-container::after {
+  content: "\2630"; /* Unicode for hamburger menu ☰ */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+ .nav-container::after {
+    content: ""; /* Remove hamburger in larger screens */
+  }
+  
 .nav-logo {
   display: flex;
   align-items: center;
@@ -167,6 +175,16 @@ body {
 .section ul li {
   margin: 10px 0;
 }
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+
+
+
+
 
 /* About Us */
 
